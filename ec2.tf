@@ -18,7 +18,7 @@ resource "aws_instance" "public_server1" {
   ami                         = data.aws_ami.ubuntu.id
   subnet_id                   = each.value.id
   associate_public_ip_address = var.associate_public_ip_address
-  instance_type               = "t2.small"
+  instance_type               = "t3.micro"
   key_name                    = "my-production-key"
   vpc_security_group_ids      = [aws_security_group.allow_ssh.id]
   tags                        = local.common_tags
