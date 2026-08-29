@@ -3,3 +3,4 @@
 *.tfstate.*
 .terraform.lock.hcl
 creation_log.txt
+terraform.auto.tfvars
